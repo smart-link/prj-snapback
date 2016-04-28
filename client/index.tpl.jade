@@ -1,0 +1,396 @@
+header#header(role='banner')
+  .container
+    #navbar.navbar.navbar-default
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='index.html')
+      .collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li.active
+            a(href='#main-slider')
+              i.icon-home
+          li
+            a(href='#services') Services
+          li
+            a(href='#portfolio') Portfolio
+          // <li><a href="#pricing">Pricing</a></li>
+          li
+            a(href='#about-us') About Us
+          li
+            a(href='#contact') Contact
+// /#header
+section#main-slider.carousel
+  .carousel-inner
+    .item.active
+      .container
+        .carousel-content
+          h1 Snapback += Smart-link
+          p.lead
+            | 스마트링크가 스냅백으로 다시 태어납니다.
+            br
+            | 10년 이상의 특급 개발자 모임.
+    // /.item
+    .item
+      .container
+        .carousel-content
+          h1 Snapback.io
+          p.lead
+            | Android, iOS, Modern Web 개발 전문팀 Snapback
+            br
+            | 더 이상 고민하지 마시고 전문가에게 맡기세요.
+    // /.item
+  // /.carousel-inner
+  a.prev(href='#main-slider', data-slide='prev')
+    i.icon-angle-left
+  a.next(href='#main-slider', data-slide='next')
+    i.icon-angle-right
+// /#main-slider
+
+section#services
+  .container
+    .box.first
+      .row
+        .col-md-4.col-sm-6
+          .center
+            i.icon-apple.icon-md.icon-color1
+            h4 iOS 개발
+            p
+              | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+        // /.col-md-4
+        .col-md-4.col-sm-6
+          .center
+            i.icon-android.icon-md.icon-color2
+            h4 Android 개발
+            p
+              | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+        // /.col-md-4
+        .col-md-4.col-sm-6
+          .center
+            i.icon-css3.icon-md.icon-color5
+            h4 Modern Web 개발
+            p
+              | Nodejs, Angularjs, Meteor, MongoDB 등 최신 웹 기술을 활용하여 개발 기간을 단축하고 빠른 time-to-market을 실현합니다. bla bla bla bla bla bla bla bla
+        // /.col-md-4
+        .col-md-4.col-sm-6
+          .center
+            i.icon-html5.icon-md.icon-color4
+            h4 Responsive Web 퍼블리싱
+            p
+              | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+        // /.col-md-4
+        .col-md-4.col-sm-6
+          .center
+            i.icon-thumbs-up.icon-md.icon-color6
+            h4 Responsive web design
+            p
+              | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+        // /.col-md-4
+        .col-md-4.col-sm-6
+          .center
+            i.icon-windows.icon-md.icon-color3
+            h4 Windows Phone development
+            p
+              | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+
+section#portfolio
+  .container
+    .box
+      .center.gap
+        h2 Portfolio
+        p.lead
+          | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+          br
+          | turpis egestas. Vestibulum tortor quam, feugiat vitae.
+      // /.center
+      ul.portfolio-filter
+        li
+          a.btn.btn-primary.active(href='#', data-filter='*') All
+        li
+          a.btn.btn-primary(href='#', data-filter='.bootstrap') Bootstrap
+        li
+          a.btn.btn-primary(href='#', data-filter='.html') HTML
+        li
+          a.btn.btn-primary(href='#', data-filter='.wordpress') Wordpress
+      // /#portfolio-filter
+      ul.portfolio-items.col-4
+        li.portfolio-item.apps
+          .item-inner
+            .portfolio-image
+              img(src='/images/portfolio/thumb/item1.jpg', alt='')
+              .overlay
+                a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item1.jpg')
+                  i.icon-eye-open
+            h5 연합뉴스 TV 모바일 앱
+        // /.portfolio-item
+        li.portfolio-item.joomla.bootstrap
+          .item-inner
+            .portfolio-image
+              img(src='/images/portfolio/thumb/item2.jpg', alt='')
+              .overlay
+                a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item2.jpg')
+                  i.icon-eye-open
+            h5 슈팅스타
+        // /.portfolio-item
+        li.portfolio-item.bootstrap.wordpress
+          .item-inner
+            .portfolio-image
+              img(src='/images/portfolio/thumb/item3.jpg', alt='')
+              .overlay
+                a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item3.jpg')
+                  i.icon-eye-open
+            h5 엔달고
+        // /.portfolio-item
+        li.portfolio-item.joomla.wordpress.apps
+          .item-inner
+            .portfolio-image
+              img(src='/images/portfolio/thumb/item4.jpg', alt='')
+              .overlay
+                a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item4.jpg')
+                  i.icon-eye-open
+            h5 Lorem ipsum dolor sit amet
+        // /.portfolio-item
+        li.portfolio-item.joomla.html
+          .item-inner
+            .portfolio-image
+              img(src='/images/portfolio/thumb/item5.jpg', alt='')
+              .overlay
+                a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item5.jpg')
+                  i.icon-eye-open
+            h5 Lorem ipsum dolor sit amet
+        // /.portfolio-item
+        li.portfolio-item.wordpress.html
+          .item-inner
+            .portfolio-image
+              img(src='/images/portfolio/thumb/item6.jpg', alt='')
+              .overlay
+                a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item6.jpg')
+                  i.icon-eye-open
+            h5 Lorem ipsum dolor sit amet
+        // /.portfolio-item
+        li.portfolio-item.joomla.html
+          .item-inner
+            .portfolio-image
+              img(src='/images/portfolio/thumb/item5.jpg', alt='')
+              .overlay
+                a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item5.jpg')
+                  i.icon-eye-open
+            h5 Lorem ipsum dolor sit amet
+        // /.portfolio-item
+        li.portfolio-item.wordpress.html
+          .item-inner
+            .portfolio-image
+              img(src='/images/portfolio/thumb/item6.jpg', alt='')
+              .overlay
+                a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item6.jpg')
+                  i.icon-eye-open
+            h5 Lorem ipsum dolor sit amet
+
+section#pricing
+  .container
+    .box
+      .center
+        h2 See our Pricings
+        p.lead
+          | Pellentesque habitant morbi tristique senectus et netus et
+          br
+          | malesuada fames ac turpis egestas.
+      // /.center
+      .big-gap
+      #pricing-table.row
+        .col-sm-4
+          ul.plan
+            li.plan-name Basic
+            li.plan-price $29
+            li 5GB Storage
+            li 1GB RAM
+            li 400GB Bandwidth
+            li 10 Email Address
+            li Forum Support
+            li.plan-action
+              a.btn.btn-primary.btn-lg(href='#') Signup
+        // /.col-sm-4
+        .col-sm-4
+          ul.plan.featured
+            li.plan-name Standard
+            li.plan-price $49
+            li 10GB Storage
+            li 2GB RAM
+            li 1TB Bandwidth
+            li 100 Email Address
+            li Forum Support
+            li.plan-action
+              a.btn.btn-primary.btn-lg(href='#') Signup
+        // /.col-sm-4
+        .col-sm-4
+          ul.plan
+            li.plan-name Advanced
+            li.plan-price $199
+            li 30GB Storage
+            li 5GB RAM
+            li 5TB Bandwidth
+            li 1000 Email Address
+            li Forum Support
+            li.plan-action
+              a.btn.btn-primary.btn-lg(href='#') Signup
+
+section#about-us
+  .container
+    .box
+      .center
+        h2 Meet the Team
+        p.lead
+          | Pellentesque habitant morbi tristique senectus et netus et
+          br
+          | malesuada fames ac turpis egestas.
+      .gap
+      #team-scroller.carousel.scale
+        .carousel-inner
+          .item.active
+            .row
+              .col-sm-4
+                .member
+                  p
+                    img.img-responsive.img-thumbnail.img-circle(src='/images/team1.jpg', alt='')
+                  h3
+                    | Meinzug ...
+                    small.designation CEO & Co-Founder
+              .col-sm-4
+                .member
+                  p
+                    img.img-responsive.img-thumbnail.img-circle(src='/images/team2.jpg', alt='')
+                  h3
+                    | David Kim
+                    small.designation CTO & Co-Founder
+              .col-sm-4
+                .member
+                  p
+                    img.img-responsive.img-thumbnail.img-circle(src='/images/team3.jpg', alt='')
+                  h3
+                    | Bruce Lee
+                    small.designation Assitant Vice President
+          .item
+            .row
+              .col-sm-4
+                .member
+                  p
+                    img.img-responsive.img-thumbnail.img-circle(src='/images/team3.jpg', alt='')
+                  h3
+                    | David Robbins
+                    small.designation Co-Founder
+              .col-sm-4
+                .member
+                  p
+                    img.img-responsive.img-thumbnail.img-circle(src='/images/team1.jpg', alt='')
+                  h3
+                    | Philip Mejia
+                    small.designation Marketing Manager
+              .col-sm-4
+                .member
+                  p
+                    img.img-responsive.img-thumbnail.img-circle(src='/images/team2.jpg', alt='')
+                  h3
+                    | Charles Erickson
+                    small.designation Support Manager
+        a.left-arrow(href='#team-scroller', data-slide='prev')
+          i.icon-angle-left.icon-4x
+        a.right-arrow(href='#team-scroller', data-slide='next')
+          i.icon-angle-right.icon-4x
+
+section#contact
+  .container
+    .box.last
+      .row
+        .col-sm-6
+          h1 견적 문의
+          p
+            | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          .status.alert.alert-success(style='display: none')
+          form#main-contact-form.contact-form(name='contact-form', method='post', action='../sendemail.php', role='form')
+            .row
+              .col-sm-6
+                .form-group
+                  input.form-control(type='text', required='required', placeholder='이름')
+              .col-sm-6
+                .form-group
+                  input.form-control(type='text', required='required', placeholder='Email')
+            .row
+              .col-sm-6
+                .form-group
+                  input.form-control(type='text', required='required', placeholder='예산 (예: 5천만원)')
+              .col-sm-6
+                .form-group
+                  input.form-control(type='text', required='required', placeholder='예상 개발 기간')
+            .row
+              .col-sm-12
+                .form-group
+                  textarea#message.form-control(name='message', required='required', rows='8', placeholder='프로젝트 간략한 설명')
+                .form-group
+                  button.btn.btn-danger.btn-lg(type='submit') 견적 요청
+        // /.col-sm-6
+        .col-sm-6
+          h1 Our Address
+          .row
+            // <div class="col-md-6">
+            // <address>
+            // <strong>Twitter, Inc.</strong><br>
+            // 795 Folsom Ave, Suite 600<br>
+            // San Francisco, CA 94107<br>
+            // <abbr title="Phone">P:</abbr> (123) 456-7890
+            // </address>
+            // </div>
+            .col-md-6
+              address
+                strong Snapback, Inc.
+                br
+                |                                     795 Folsom Ave, Suite 600
+                br
+                |                                     San Francisco, CA 94107
+                br
+                abbr(title='Phone') P:
+                |  (123) 456-7890
+          h1 Connect with us
+          .row
+            .col-md-6
+              ul.social
+                li
+                  a(href='#')
+                    i.icon-facebook.icon-social
+                    |  Facebook
+                li
+                  a(href='#')
+                    i.icon-google-plus.icon-social
+                    |  Google Plus
+                li
+                  a(href='#')
+                    i.icon-pinterest.icon-social
+                    |  Pinterest
+            .col-md-6
+              ul.social
+                li
+                  a(href='#')
+                    i.icon-linkedin.icon-social
+                    |  Linkedin
+                li
+                  a(href='#')
+                    i.icon-twitter.icon-social
+                    |  Twitter
+                li
+                  a(href='#')
+                    i.icon-youtube.icon-social
+                    |  Youtube
+
+footer#footer
+  .container
+    .row
+      .col-sm-6
+        | © 2013
+        a(target='_blank', href='http://shapebootstrap.net/', title='Free Twitter Bootstrap WordPress Themes and HTML templates') ShapeBootstrap
+        | . All Rights Reserved.
+      .col-sm-6
+        img.pull-right(src='/images/shapebootstrap.png', alt='ShapeBootstrap', title='ShapeBootstrap')
+// /#footer
+
