@@ -28,20 +28,24 @@ section#main-slider.carousel
     .item.active
       .container
         .carousel-content
-          h1 Snapback += Smart-link
+          h1 Snapbacks.io
           p.lead
-            | 스마트링크가 스냅백으로 다시 태어납니다.
+            | Modern Web, Android, iOS, 소프트웨어 개발 전문가 그룹 Snapback
             br
-            | 10년 이상의 특급 개발자 모임.
+            | 더 이상 고민하지 마시고 전문가에게 맡기세요.
+            //br
+            //| 인생 편안해 집니다
+            //br
+            //|
     // /.item
     .item
       .container
         .carousel-content
-          h1 Snapback.io
+          h1 SNAPBACK
           p.lead
-            | Android, iOS, Modern Web 개발 전문팀 Snapback
+            | 스타트업을 위한 소프트웨어 개발 전반에 대한 AtoZ 지원
             br
-            | 더 이상 고민하지 마시고 전문가에게 맡기세요.
+            | "잘 만난 외주 업체 하나 열 개발자 안부럽다."
     // /.item
   // /.carousel-inner
   a.prev(href='#main-slider', data-slide='prev')
@@ -151,7 +155,7 @@ section#portfolio
               .overlay
                 a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item4.jpg')
                   i.icon-eye-open
-            h5 Lorem ipsum dolor sit amet
+            h5 이랜드
         // /.portfolio-item
         li.portfolio-item.joomla.html
           .item-inner
@@ -160,7 +164,7 @@ section#portfolio
               .overlay
                 a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item5.jpg')
                   i.icon-eye-open
-            h5 Lorem ipsum dolor sit amet
+            h5 베이글
         // /.portfolio-item
         li.portfolio-item.wordpress.html
           .item-inner
@@ -169,7 +173,7 @@ section#portfolio
               .overlay
                 a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item6.jpg')
                   i.icon-eye-open
-            h5 Lorem ipsum dolor sit amet
+            h5 레드프린팅
         // /.portfolio-item
         li.portfolio-item.joomla.html
           .item-inner
@@ -178,7 +182,7 @@ section#portfolio
               .overlay
                 a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item5.jpg')
                   i.icon-eye-open
-            h5 Lorem ipsum dolor sit amet
+            h5 제주 복합문화공간 Playce
         // /.portfolio-item
         li.portfolio-item.wordpress.html
           .item-inner
@@ -187,9 +191,9 @@ section#portfolio
               .overlay
                 a.preview.btn.btn-danger(title='Lorem ipsum dolor sit amet', href='/images/portfolio/full/item6.jpg')
                   i.icon-eye-open
-            h5 Lorem ipsum dolor sit amet
+            h5 사운드앤피플
 
-section#pricing
+//section#pricing
   .container
     .box
       .center
@@ -237,7 +241,7 @@ section#pricing
             li.plan-action
               a.btn.btn-primary.btn-lg(href='#') Signup
 
-section#about-us
+//section#about-us
   .container
     .box
       .center
@@ -307,7 +311,8 @@ section#contact
         .col-sm-6
           h1 견적 문의
           p
-            | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            //| Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            | 아래 양식을 간략히 작성하여 견적 요청을 주시면 빠른 시간 내로 연락 드리겠습니다.
           .status.alert.alert-success(style='display: none')
           form#main-contact-form.contact-form(name='contact-form', method='post', action='../sendemail.php', role='form')
             .row
@@ -323,11 +328,11 @@ section#contact
                   input.form-control(type='text', required='required', placeholder='예산 (예: 5천만원)')
               .col-sm-6
                 .form-group
-                  input.form-control(type='text', required='required', placeholder='예상 개발 기간')
+                  input.form-control(type='text', required='required', placeholder='예상 개발 기간 (예 3개월)')
             .row
               .col-sm-12
                 .form-group
-                  textarea#message.form-control(name='message', required='required', rows='8', placeholder='프로젝트 간략한 설명')
+                  textarea#message.form-control(name='message', required='required', rows='8', placeholder='프로젝트에 대한 간략한 설명')
                 .form-group
                   button.btn.btn-danger.btn-lg(type='submit') 견적 요청
         // /.col-sm-6
@@ -344,14 +349,19 @@ section#contact
             // </div>
             .col-md-6
               address
-                strong Snapback, Inc.
+                strong 주) 스냅백
                 br
-                |                                     795 Folsom Ave, Suite 600
+                | 서초구 반포대로 23길 13 5층 L150호
+                //br
+                //| 서초동 1509-3 번지 아트스페이스210빌딩
+                //br
+                //| 13, Banpo-daero 23-gil, Seocho-gu, Seoul, Korea
                 br
-                |                                     San Francisco, CA 94107
+                abbr(title='Mobile') Phone:
+                | 02-6203-7254
                 br
-                abbr(title='Phone') P:
-                |  (123) 456-7890
+                abbr(title='Mobile') Fax:
+                | 02-6280-7259
           h1 Connect with us
           .row
             .col-md-6
